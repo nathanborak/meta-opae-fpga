@@ -1,3 +1,4 @@
+#url: https://github.com/intel-innersource/os.linux.yocto.reference-design.meta-intel-fpga-refdes
 machine: agilex
 image: n6000
 target: n6000-image-minimal
@@ -20,7 +21,7 @@ repos:
     keep: true
     add_layers: true
   - name: meta-openembedded
-    url: git://git.openembedded.org/meta-openembedded.git
+    url: https://git.openembedded.org/meta-openembedded
     branch: hardknott
     add_layers:
       - meta-oe
@@ -60,5 +61,3 @@ local:
     UBOOT_CONFIG: agilex-n6000
     PREFERRED_PROVIDER_virtual/bootloader: u-boot-socfpga
     PREFERRED_VERSION_u-boot-socfpga: v2021.07%
-
-
